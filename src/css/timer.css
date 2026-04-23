@@ -1,0 +1,12 @@
+.timer {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  color: #ff6b3d;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: #1a1a1a;
+}
+
+.timer-span{
+    background: #1a1a1a;
+}

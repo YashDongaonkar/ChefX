@@ -1,0 +1,30 @@
+.webcam-overlay {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 220px;
+  z-index: 999;
+
+  transform: scaleX(-1);
+
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: black;
+}
+
+.webcam-overlay canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .webcam-overlay {
+    width: 140px;
+    height: 100px;
+    opacity: 0.3;
+  }
+}
