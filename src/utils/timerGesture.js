@@ -21,9 +21,9 @@ export async function runTimerGesture({ model, video, refs }) {
         case "stop":
           window.dispatchEvent(new Event("timerStop"));
         break;
-      // case "start":
-      //   window.dispatchEvent(new Event("timerReset"));
-      //   break;
+      case "start":
+        window.dispatchEvent(new Event("timerReset"));
+        break;
     }
 
     refs.lastGestureTime = now;
