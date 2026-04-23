@@ -1,7 +1,7 @@
 let model;
 
 export async function loadTimerModel() {
-  const URL = "./model/";
+  const URL = import.meta.env.BASE_URL + "model/";
 
   if (!window.tmImage) {
     console.error("tmImage not loaded ❌");

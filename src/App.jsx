@@ -20,13 +20,11 @@ export default function App() {
         <Toaster />
         <FloatingWebcam />
         <VisionEngine />
-        <Router>
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/recipes" element={<RecipesPage />} />
-            <Route path="/recipe/:id" element={<RecipeDetail />} />
-          </Routes>
-        </Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/recipes" element={<RecipesPage />} />
+          <Route path="/recipe/:id" element={<RecipeDetail />} />
+        </Routes>
       </VisionProvider>
     </WebcamProvider>
   );
